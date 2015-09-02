@@ -22,6 +22,9 @@ The best way to use the library is to create a JoystickLayer, and then add that 
 
 This is an example on how to create a Joystick Thumb
 ```C++
+#include "SneakyInput.h"
+// ...
+
 auto screenSize = Director::getInstance()->getVisibleSize();
 
 Rect joystickBaseDimensions;
@@ -52,6 +55,9 @@ To use it you just need to call 'getStickPosition'
 This is an example on how to create a Joystick Button
 
 ```C++
+#include "SneakyInput.h"
+// ...
+
 Rect attackButtonDimensions = Rect(0, 0, 64.0f, 64.0f);
 Point attackButtonPosition;
 attackButtonPosition = Point(screenSize.width * 0.9f, screenSize.height * 0.2f);
