@@ -21,7 +21,7 @@ How to Use the Library
 The best way to use the library is to create a JoystickLayer, and then add that layer to your Game Scene.
 
 This is an example on how to create a Joystick Thumb
-
+```C++
 auto screenSize = Director::getInstance()->getVisibleSize();
 
 Rect joystickBaseDimensions;
@@ -45,11 +45,13 @@ joystickBase->setPosition(joystickBasePosition);
 auto leftJoystick = joystickBase->getJoystick();
 leftJoystick->retain();
 this->addChild(joystickBase);
+```
 
 To use it you just need to call 'getStickPosition'
 
 This is an example on how to create a Joystick Button
 
+```C++
 Rect attackButtonDimensions = Rect(0, 0, 64.0f, 64.0f);
 Point attackButtonPosition;
 attackButtonPosition = Point(screenSize.width * 0.9f, screenSize.height * 0.2f);
@@ -74,5 +76,6 @@ attackButtonBase->setPosition(attackButtonPosition);
 auto attackButton = attackButtonBase->getButton();
 attackButton->retain();
 addChild(attackButtonBase);
+```
 
 To use it you just need to call 'getValue'
