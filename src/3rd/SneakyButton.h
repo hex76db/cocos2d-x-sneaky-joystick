@@ -7,6 +7,8 @@ USING_NS_CC;
 
 class SneakyButton : public Node
 {
+public:
+    CREATE_FUNC(SneakyButton);
 protected:
 	Point center;
 	Rect bounds;

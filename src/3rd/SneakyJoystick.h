@@ -7,6 +7,9 @@ USING_NS_CC;
 
 class SneakyJoystick : public Node
 {
+public:
+    CREATE_FUNC(SneakyJoystick);
+
 protected:
 	float thumbRadiusSq;
 	float deadRadiusSq;
@@ -39,7 +42,7 @@ protected:
 
 	void touchDelegateRelease();
 	void touchDelegateRetain();
-
+    
 private:
 	void updateVelocity(Point point);
 	void setTouchRadius();
